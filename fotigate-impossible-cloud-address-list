@@ -1,0 +1,70 @@
+config firewall address
+    edit "IC1"
+        set subnet 130.117.188.224/32
+    next
+    edit "IC2"
+        set subnet 130.117.188.225/32
+    next
+    edit "IC3"
+        set subnet 184.104.179.224/32
+    next
+    edit "IC4"
+        set subnet 184.104.202.128/32
+    next
+    edit "IC5"
+        set subnet 185.182.80.132/32
+    next
+    edit "IC6"
+        set subnet 185.182.80.135/32
+    next
+    edit "IC7"
+        set subnet 194.164.87.21/32
+    next
+    edit "IC8"
+        set subnet 194.164.87.22/32
+    next
+    edit "IC9"
+        set subnet 194.164.87.36/32
+    next
+    edit "IC10"
+        set subnet 194.164.87.37/32
+    next
+    edit "IC11"
+        set subnet 194.54.146.72/32
+    next
+    edit "IC12"
+        set subnet 194.54.146.74/32
+    next
+    edit "IC13"
+        set subnet 81.15.150.195/32
+    next
+    edit "IC14"
+        set subnet 81.15.150.205/32
+    next
+    edit "IC15"
+        set subnet 81.15.150.209/32
+    next
+    edit "IC16"
+        set subnet 89.35.53.38/32
+    next
+    edit "IC17"
+        set subnet 89.35.53.39/32
+    next
+    edit "IC18"
+        set subnet 94.103.168.1/32
+    next
+    edit "IC19"
+        set subnet 94.103.168.3/32
+    next
+    edit "IC20"
+        set subnet 45.152.194.7/32
+    next
+    edit "IC21"
+        set subnet 45.152.194.6/32
+    next
+end
+config firewall addrgrp
+    edit "IMPOSSIBLE CLOUD"
+        set member "IC1" "IC2" "IC3" "IC4" "IC5" "IC6" "IC7" "IC8" "IC9" "IC10" "IC11" "IC12" "IC13" "IC14" "IC15" "IC16" "IC17" "IC18" "IC19" "IC20" "IC21"
+    next
+end
